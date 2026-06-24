@@ -1,0 +1,13 @@
+.venv
+.git
+.idea
+__pycache__
+*.pyc
+*.pyo
+.DS_Store
+*.difypkg
+dist
+.env
+.env.*
+.package.sh
+*.iml

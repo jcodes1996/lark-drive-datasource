@@ -1,0 +1,28 @@
+version: 0.0.1
+type: plugin
+author: jcodes
+name: lark-drive
+label:
+  en_US: Lark Drive
+  zh_Hans: 飞书云盘
+description:
+  en_US: Fetch documents from Lark Drive (Feishu Drive) for Dify knowledge base pipeline.
+  zh_Hans: 从飞书云盘获取文档，用于 Dify 知识库流水线。
+icon: icon.svg
+resource:
+  memory: 536870912
+  permission: {}
+plugins:
+  datasources:
+    - provider/lark_drive.yaml
+created_at: "2026-06-12T00:00:00Z"
+meta:
+  version: 1.0.0
+  arch:
+    - amd64
+    - arm64
+  minimum_dify_version: "1.9.0"
+  runner:
+    language: python
+    version: "3.12"
+    entrypoint: main

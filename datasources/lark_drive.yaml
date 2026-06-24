@@ -1,0 +1,20 @@
+identity:
+  name: lark-drive
+  author: jcodes
+  label:
+    en_US: Lark Drive
+    zh_Hans: 飞书云盘
+description:
+  en_US: Fetch files from Lark Drive folder.
+  zh_Hans: 从飞书云盘文件夹获取文件。
+
+parameters:
+
+output_schema:
+  type: object
+  properties:
+    file:
+      $ref: "https://dify.ai/schemas/v1/file.json"
+extra:
+  python:
+    source: datasources/lark_drive.py
